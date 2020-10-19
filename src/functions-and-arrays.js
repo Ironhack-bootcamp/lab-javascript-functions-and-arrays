@@ -28,7 +28,7 @@ function findLongestWord(arrOfWords) {
 
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
-function sumArray(someArr) {
+function sumNumbers(someArr) {
   if (!someArr) return null;
   let sum = 0;
   for (let element of someArr) {
