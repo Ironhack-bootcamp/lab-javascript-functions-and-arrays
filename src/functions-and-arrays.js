@@ -1,20 +1,18 @@
-// Iteration #1: Find the maximum
+// --------------- Iteration #1: Find the maximum ----------------
 function maxOfTwoNumbers(num1, num2){
     if(num1 > num2) return num1
     else return num2
   }
-// Iteration #2: Find longest word
+
+
+// --------------- Iteration #2: Find longest word ----------------
 const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
 
 function findLongestWord(arrOfWords) {
   if (!arrOfWords.length) return null;
 
   //to start we take the first word as the longest one
-  let largestWord = arrOfWords[0];
-
-  // use for loop to go through the arrOfWords
-  //     word is just a placeholder
-  //        |
+  let largestWord = arrOfWords[0];    
   for (let word of arrOfWords) {
     // if the current word is longer than the largestWord...
     if (word.length > largestWord.length) {
@@ -26,18 +24,28 @@ function findLongestWord(arrOfWords) {
 }
 
 
-// Iteration #3: Calculate the sum
+// --------------- Iteration #3: Calculate the sum ----------------
 
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
-// Iteration #4: Calculate the average
+function sumArray(someArr) {
+  if (!someArr) return null;
+  let sum = 0;
+  for (let element of someArr) {
+    if (typeof element === 'string') sum += element.length;
+    else sum += element;
+  }
+  return sum;
+}
+
+// --------------- Iteration #4: Calculate the average ----------------
 // Level 1: Array of numbers
 const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
 
 // Level 2: Array of strings
 const wordsArr = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart', 'chaos', 'fuel', 'palace'];
 
-// Iteration #5: Unique arrays
+// --------------- Iteration #5: Unique arrays ----------------
 const wordsUnique = [
   'crab',
   'poison',
@@ -52,10 +60,10 @@ const wordsUnique = [
   'bring'
 ];
 
-// Iteration #6: Find elements
+// --------------- Iteration #6: Find elements ----------------
 const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
 
-// Iteration #7: Count repetition
+// --------------- Iteration #7: Count repetition ----------------
 const wordsCount = [
   'machine',
   'matter',
@@ -70,7 +78,7 @@ const wordsCount = [
   'matter'
 ];
 
-// Iteration #8: Bonus
+// --------------- Iteration #8: Bonus
 
 const matrix = [
   [8, 2, 22, 97, 38, 15, 0, 40, 0, 75, 4, 5, 7, 78, 52, 12, 50, 77, 91, 8],
