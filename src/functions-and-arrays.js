@@ -1,7 +1,7 @@
 // --------------- Iteration #1: Find the maximum ----------------
 function maxOfTwoNumbers(num1, num2){
-    if(num1 > num2) return num1
-    else return num2
+    if(num1 > num2) {return num1}
+    else {return num2}
   }
 
 
@@ -9,7 +9,7 @@ function maxOfTwoNumbers(num1, num2){
 const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
 
 function findLongestWord(arrOfWords) {
-  if (!arrOfWords.length) return null;
+  if (!arrOfWords.length) {return null;}
 
   //to start we take the first word as the longest one
   let largestWord = arrOfWords[0];    
@@ -29,22 +29,29 @@ function findLongestWord(arrOfWords) {
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
 function sumNumbers (someArr) {
-  if (!someArr) return null;
+  if (!someArr) {return null;}
   let sum = 0;
   for (let element of someArr) {
-    if (typeof element === 'string') sum += element.length;
-    else sum += element;
+    if (typeof element === 'string') {
+      sum += element.length;
+    }
+    else {
+      sum += element;
+    }
   }
   return sum;
 }
 
 function sum (someArr) {
-  if (!someArr) return null;
+  if (!someArr) {return null;}
   let sum = 0;
   for (let element of someArr) {
-    if (typeof element === 'string') {sum += element.length;
-    } else if (typeof element === 'object') { console.error('error')
-    } else {sum += element;
+    if (typeof element === 'string') {
+      sum += element.length;
+    } else if (typeof element === 'object') { 
+      console.error('error')
+    } else {
+      sum += element;
     }
   }
   return sum;
